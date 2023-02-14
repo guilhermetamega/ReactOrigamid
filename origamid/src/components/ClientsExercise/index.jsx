@@ -22,7 +22,7 @@ export default function ClientsExercise() {
     ativo: true,
   };
 
-  const data = neida;
+  const data = mario;
 
   const total = data.compras.map((item) => item.valor).reduce((a, b) => a + b);
 
@@ -38,7 +38,7 @@ export default function ClientsExercise() {
         </span>
       </h2>
       <h2>Gastos Totais: R$ {total}</h2>
-      <h2>{total >= 10000 ? "Diminua seus gastos" : ""}</h2>
+      {total >= 10000 && <h2>Diminua seus gastos</h2>}
       <hr />
     </>
   );
