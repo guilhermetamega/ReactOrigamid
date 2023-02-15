@@ -1,5 +1,6 @@
 import "./App.css";
 import ArrayClass from "./components/ArraysClass";
+import ArrayExercise from "./components/ArraysExercise";
 import ClientsExercise from "./components/ClientsExercise";
 const App = () => {
   const active = false;
@@ -16,6 +17,7 @@ const App = () => {
       <h1 style={styleH1}>H1 estilizado</h1>
       <ClientsExercise />
       <ArrayClass />
+      <ArrayExercise />
     </main>
   );
 };
