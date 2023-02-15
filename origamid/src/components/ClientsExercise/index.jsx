@@ -11,6 +11,7 @@ export default function ClientsExercise() {
     ativo: false,
   };
 
+  // eslint-disable-next-line no-unused-vars
   const neida = {
     nome: "Neida",
     idade: 28,
