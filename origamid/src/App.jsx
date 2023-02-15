@@ -2,6 +2,7 @@ import "./App.css";
 import ArrayClass from "./components/ArraysClass";
 import ArrayExercise from "./components/ArraysExercise";
 import ClientsExercise from "./components/ClientsExercise";
+import EventsClass from "./components/EventsClass";
 const App = () => {
   const active = false;
 
@@ -18,6 +19,7 @@ const App = () => {
       <ClientsExercise />
       <ArrayClass />
       <ArrayExercise />
+      <EventsClass />
     </main>
   );
 };
