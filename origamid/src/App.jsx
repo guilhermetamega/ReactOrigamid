@@ -5,6 +5,7 @@ import ClientsExercise from "./components/ClientsExercise";
 import EventsClass from "./components/EventsClass";
 import UseStateClass from "./components/Hooks/UseStateClass";
 import PropertiesClass from "./components/PropertiesClass";
+import UseStateExercise from "./components/UseStateExercise";
 const App = () => {
   const active = false;
 
@@ -24,6 +25,7 @@ const App = () => {
       <EventsClass />
       <PropertiesClass />
       <UseStateClass />
+      <UseStateExercise />
     </main>
   );
 };
