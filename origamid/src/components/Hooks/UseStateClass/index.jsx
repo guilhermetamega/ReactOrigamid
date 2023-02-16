@@ -12,6 +12,14 @@ export default function UseStateClass() {
     { user: "Luiz", name: "Luiz Romero", age: 19 },
   ]);
 
+  function closeModal() {
+    setModal(false);
+  }
+
+  function openModal() {
+    setModal(true);
+  }
+
   function handleClickReative() {
     setList([...list, "Item adicionado A", "Item adicionado B"]); //Mais de um item pode ser adicionado à lista utilizando o spread pegando os itens anteriormentes adicionados à lista principal
   }
@@ -39,8 +47,8 @@ export default function UseStateClass() {
 
       <h3>Modal com useState</h3>
       <div>
-        <Modal modal={modal} setModal={setModal} />
-        <ButtonModal onClick={setModal} />
+        <Modal isOpen={modal} closeModal={closeModal} />
+        <ButtonModal openModal={openModal} />
       </div>
       <hr />
     </>

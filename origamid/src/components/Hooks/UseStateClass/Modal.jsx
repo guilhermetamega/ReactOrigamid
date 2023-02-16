@@ -1,9 +1,13 @@
-export default function Modal({ modal, setModal }) {
-  modal ? (
-    <div>
-      Modal Experimental <button onClick={() => setModal(false)}>Fechar</button>
-    </div>
-  ) : (
-    <></>
+export default function Modal({ isOpen, closeModal }) {
+  return (
+    <>
+      {isOpen ? (
+        <div>
+          Modal Experimental <button onClick={closeModal}>Fechar</button>
+        </div>
+      ) : (
+        <></>
+      )}
+    </>
   );
 }

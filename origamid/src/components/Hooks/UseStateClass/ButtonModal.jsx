@@ -1,3 +1,3 @@
-export default function ButtonModal({ setModal }) {
-  return <button onClick={() => setModal(true)}>Abrir Modal</button>;
+export default function ButtonModal({ openModal }) {
+  return <button onClick={openModal}>Abrir Modal</button>;
 }
