@@ -3,6 +3,7 @@ import ArrayClass from "./components/ArraysClass";
 import ArrayExercise from "./components/ArraysExercise";
 import ClientsExercise from "./components/ClientsExercise";
 import EventsClass from "./components/EventsClass";
+import UseStateClass from "./components/Hooks/UseStateClass";
 import PropertiesClass from "./components/PropertiesClass";
 const App = () => {
   const active = false;
@@ -22,6 +23,7 @@ const App = () => {
       <ArrayExercise />
       <EventsClass />
       <PropertiesClass />
+      <UseStateClass />
     </main>
   );
 };
