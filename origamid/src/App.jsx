@@ -7,6 +7,7 @@ import UseStateClass from "./components/Hooks/UseStateClass";
 import PropertiesClass from "./components/PropertiesClass";
 import UseStateExercise from "./components/Hooks/UseStateExercise";
 import UseEffectClass from "./components/Hooks/UseEffectClass";
+import UseEffectExercise from "./components/Hooks/UseEffectExercise";
 const App = () => {
   const active = false;
 
@@ -28,6 +29,7 @@ const App = () => {
       <UseStateClass />
       <UseStateExercise />
       <UseEffectClass />
+      <UseEffectExercise />
     </main>
   );
 };
