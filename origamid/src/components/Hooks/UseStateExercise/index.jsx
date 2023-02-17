@@ -21,6 +21,7 @@ export default function UseStateExercise() {
 
   return (
     <>
+      <h1>Exercício UseState</h1>
       <button onClick={handleClick}>tablet</button>
       <button onClick={handleClick}>smartphone</button>
       <button onClick={handleClick}>notebook</button>
