@@ -8,6 +8,7 @@ import PropertiesClass from "./components/PropertiesClass";
 import UseStateExercise from "./components/Hooks/UseStateExercise";
 import UseEffectClass from "./components/Hooks/UseEffectClass";
 import UseEffectExercise from "./components/Hooks/UseEffectExercise";
+import UseContextClass from "./components/Hooks/UseContextClass";
 const App = () => {
   const active = false;
 
@@ -30,6 +31,7 @@ const App = () => {
       <UseStateExercise />
       <UseEffectClass />
       <UseEffectExercise />
+      <UseContextClass />
     </main>
   );
 };

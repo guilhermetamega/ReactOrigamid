@@ -23,7 +23,6 @@ export default function UseEffectExercise() {
       <h2>Preferência: {product}</h2>
       <button onClick={handleClick}>notebook</button>
       <button onClick={handleClick}>smartphone</button>
-
       <Produto product={product} amount={amount} />
       <button onClick={() => setAmount(amount + 1)}>+</button>
       <button onClick={() => setAmount(amount - 1)}>-</button>
