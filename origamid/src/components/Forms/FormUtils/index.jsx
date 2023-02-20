@@ -3,6 +3,12 @@ import { useState } from "react";
 export default function FormUtils() {
   const [message, setMessage] = useState("");
   const [select, setSelect] = useState("");
+
+  const [radio, setRadio] = useState("");
+
+  function handleChange({ target }) {
+    setRadio(target.value);
+  }
   return (
     <>
       <form>
@@ -26,6 +32,34 @@ export default function FormUtils() {
           <option value="tablet">Tablet</option>
         </select>
         <p>{select}</p>
+        <hr />
+        <label>
+          <input
+            type="radio"
+            value="notebook"
+            checked={radio === "notebook"}
+            onChange={handleChange}
+          />
+          Notebook
+        </label>
+        <label>
+          <input
+            type="radio"
+            value="smartphone"
+            checked={radio === "smartphone"}
+            onChange={handleChange}
+          />
+          Smartphone
+        </label>
+        <label>
+          <input
+            type="radio"
+            value="tablet"
+            checked={radio === "tablet"}
+            onChange={handleChange}
+          />
+          Tablet
+        </label>
       </form>
       <hr />
     </>
