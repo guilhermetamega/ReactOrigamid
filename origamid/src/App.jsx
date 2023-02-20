@@ -13,6 +13,7 @@ import UseContextExercise from "./components/Hooks/UseContextExercise";
 import InputClass from "./components/Forms/InputClass";
 import FormUtils from "./components/Forms/FormUtils";
 import FormComponents from "./components/Forms/FormComponents";
+import CustomForm from "./components/Forms/CustomForm";
 const App = () => {
   const active = false;
 
@@ -40,6 +41,7 @@ const App = () => {
       <InputClass />
       <FormUtils />
       <FormComponents />
+      <CustomForm />
     </main>
   );
 };
