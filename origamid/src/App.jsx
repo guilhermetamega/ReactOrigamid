@@ -14,6 +14,7 @@ import InputClass from "./components/Forms/InputClass";
 import FormUtils from "./components/Forms/FormUtils";
 import FormComponents from "./components/Forms/FormComponents";
 import CustomForm from "./components/Forms/CustomForm";
+import CustomFormExercise from "./components/Forms/CustomFormExercise";
 const App = () => {
   const active = false;
 
@@ -42,6 +43,7 @@ const App = () => {
       <FormUtils />
       <FormComponents />
       <CustomForm />
+      <CustomFormExercise />
     </main>
   );
 };

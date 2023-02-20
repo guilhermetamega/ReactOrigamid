@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Radio from "./Radio";
 
 const questions = [
@@ -36,5 +37,54 @@ const questions = [
 ];
 
 export default function CustomFormExercise() {
-  return <></>;
+  const [answers, setAnswers] = useState({
+    p1: "",
+    p2: "",
+    p3: "",
+    p4: "",
+  });
+  const [slide, setSlide] = useState(0);
+  const [result, setResult] = useState(null);
+
+  function handleChange({ target }) {
+    setAnswers({ ...answers, [target.id]: target.value });
+  }
+
+  function finalResult() {
+    const corrects = questions.filter(
+      ({ id, answer }) => answers[id] === answer
+    );
+    setResult(`Você acertou: ${corrects.length} de ${questions.length}`);
+  }
+
+  function handleClick() {
+    if (slide < questions.length - 1) {
+      setSlide(slide + 1);
+    } else {
+      setSlide(slide + 1);
+      finalResult();
+    }
+  }
+
+  return (
+    <>
+      <h1>Custom Form Exercise</h1>
+      <form onSubmit={(e) => e.preventDefault()}>
+        {questions.map((question, i) => (
+          <Radio
+            active={slide === i}
+            key={question.id}
+            value={answers[question.id]}
+            onChange={handleChange}
+            {...question}
+          />
+        ))}
+        {result ? (
+          <p>{result}</p>
+        ) : (
+          <button onClick={handleClick}>Próxima</button>
+        )}
+      </form>
+    </>
+  );
 }
