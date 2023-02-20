@@ -64,8 +64,11 @@ export default function InputClass() {
           </div>
         ))}
         <button>Criar</button>
-        {response && response.ok && <p>Usuário Criado</p>}
-        {response && response.ok === false && <p>Erro ao criar usuário</p>}
+        {response && response.ok ? (
+          <p>Usuário Criado</p>
+        ) : (
+          <p>Erro ao criar usuário</p>
+        )}
       </form>
       <hr />
     </>
