@@ -11,6 +11,7 @@ import UseEffectExercise from "./components/Hooks/UseEffectExercise";
 import UseContextClass from "./components/Hooks/UseContextClass";
 import UseContextExercise from "./components/Hooks/UseContextExercise";
 import InputClass from "./components/Forms/InputClass";
+import FormUtils from "./components/Forms/FormUtils";
 const App = () => {
   const active = false;
 
@@ -36,6 +37,7 @@ const App = () => {
       <UseContextClass />
       <UseContextExercise />
       <InputClass />
+      <FormUtils />
     </main>
   );
 };
